@@ -1,0 +1,39 @@
+/**message.wxss**/
+
+.index-nav {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  color: #646464;
+}
+.index-nav view {
+  flex: 1;
+  flex-direction: column;
+}
+.item_text{
+  display: block;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  color: #656565;
+  
+}
+.item_selected_view_color{
+    background: #ececec;
+}
+.item_selected_text_color{
+    color: #3cc51f;
+    font-size: 20px;
+}
+
+.content_view{
+    width:100%;
+    height: 100%;
+}
+.scroll_view_h{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: 100%;
+}

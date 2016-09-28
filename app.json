@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/main/main",
+    "pages/discover/discover",
+    "pages/message/message",
+    "pages/me/me"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#33C774",
+    "navigationBarTitleText": "小程序名",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+        "color": "#dddddd",
+        "selectedColor": "#3cc51f",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "image/ic_tab_home_normal.png",
+                "selectedIconPath": "image/ic_tab_home_selected.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/discover/discover",
+                "iconPath": "image/ic_discover_normal.png",
+                "selectedIconPath": "image/ic_discover_selected.png",
+                "text": "发现"
+            },
+            {
+                "pagePath": "pages/message/message",
+                "iconPath": "image/ic_message_normal.png",
+                "selectedIconPath": "image/ic_message_selected.png",
+                "text": "消息"
+            },
+            {
+                "pagePath": "pages/me/me",
+                "iconPath": "image/ic_me_normal.png",
+                "selectedIconPath": "image/ic_me_selected.png",
+                "text": "我的"
+            }
+        ]
+    }
+}

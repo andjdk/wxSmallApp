@@ -1,0 +1,24 @@
+<!--message.wxml-->
+
+<view class="container">
+    <view class="index-nav">
+        <block wx:for-items="{{menu}}">
+            <view class="l-c-c" bindtap="onclicktag" data-type="{{item}}">
+                <text class="item_text {{curNav == item ? 'item_selected_text_color' : ''}}">{{item}}</text>
+            </view>
+        </block>
+    </view>
+    <progress percent="{{progressNumber}}" active stroke-width="2"/>
+
+    <view class="content_view" wx:if="{{curNav=='动态'}}">
+     <text>动态</text>
+        <loading hidden="{{hidden}}">加载中...
+        </loading>
+    </view>
+    <view class="content_view" wx:if="{{curNav=='通知'}}">
+     <text>通知</text>
+    </view>
+    <view class="content_view" wx:if="{{curNav=='聊天'}}">
+     <text>聊天</text>
+    </view>
+</view>

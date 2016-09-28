@@ -1,0 +1,141 @@
+/**index.wxss**/
+.slide-image{
+    display: block;
+    width: 100%;
+    height: 150px;
+}
+/*分类*/
+.index-nav {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  color: #646464;
+}
+.index-nav view {
+  flex: 1;
+  flex-direction: column;
+}
+.index-nav image {
+  width: 40px;
+  height: 40px;
+}
+.index-nav text {
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+.line_y {
+  width: 5px;
+  height: 30px;
+  display: inline-block;
+  background-color: #09bb07;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.title_layout {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 16px;
+  font-weight: bold;
+  color: #656565;
+  background-color: #fff;
+  margin-top: 5px;
+}
+.content_layout_h{
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  background-color: #fff;
+}
+.content_layout_v{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.content_name{
+  font-size: 14px;
+  font-weight: bold;
+  color:#646464;
+}
+.content_level{
+  font-size: 13px;
+  color:#646464;
+  margin-left: 10px;
+  margin-top:2px;
+}
+.content_desc{
+  font-size: 13px;
+  color:#646464;
+  padding-bottom: 5px;
+  background: #fff;
+}
+.content_pad_left_5{
+  padding-left: 5px;
+}
+
+.scroll_view_h{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    background-color: #fff;
+    width:100%;
+    height: 150px;
+}
+
+.scroll_view_item_h{
+    display: inline-block;
+    flex-direction: row;
+    margin: 5px;
+}
+.scroll_view_item_v{
+    display: inline-flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.scroll_view_item_image{
+    width: 100px;
+    height: 100px;
+}
+
+.scroll_view_item_name{
+  font-size: 14px;
+  color: #000;
+  margin-top: 5px;
+  text-align: center;
+}
+.scroll_view_item_loc{
+  font-size: 13px;
+  color: #656565;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.venues_name{
+  font-size: 14px;
+  font-weight: bold;
+  color:#646464;
+  width: 70%;
+}
+.venues_price{
+  font-size: 13px;
+  color:#09bb07;
+  margin-left: 10px;
+  margin-top:2px;
+  width: 30%;
+  text-align: right;
+}
+.venues_desc{
+  font-size: 13px;
+  color:#646464;
+  padding-bottom: 5px;
+  background: #fff;
+  width: 70%;
+}
+.venues_loc{
+  font-size: 13px;
+  color: #656565;
+  text-align: right;
+  width: 30%;
+}

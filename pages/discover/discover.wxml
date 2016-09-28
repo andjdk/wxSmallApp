@@ -1,0 +1,12 @@
+<!--main.wxml-->
+<view class="container">
+    <toast hidden="{{toast}}"  duration="1500" bindchange="toastChange">{{toastMessage}}</toast>
+    <scroll-view class="scroll-view_v" scroll-y="true" style="height:100%">
+        <block wx:for-items="{{listdata}}">
+            <view id="discover_list" class="discover_item" bindtap="onclicklist" data-type="{{item.text}}">
+                <image class="discover_item_image" src="{{item.image}}"/>
+                <text class="discover_item_text">{{item.text}}</text>
+            </view>
+        </block>
+    </scroll-view>
+</view>

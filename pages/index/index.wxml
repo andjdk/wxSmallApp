@@ -1,0 +1,74 @@
+<!--index.wxml-->
+<view class="container">
+    <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for-items="{{imgUrls}}">
+            <swiper-item>
+                 <image src="{{item}}" class="slide-image"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    
+     <view class="index-nav" style="margin-top:5px">
+        <block wx:for-items="{{navs}}">
+            <view class="l-c-c" catchtap="go" data-type="{{item.text}}">
+                <image src="{{item.image}}"/>
+                <text>{{item.text}}</text>
+            </view>
+        </block>
+    </view>
+    <view class="index-nav">
+        <block wx:for-items="{{navstwo}}">
+            <view class="l-c-c" catchtap="go" data-type="{{item.text}}">
+                <image src="{{item.image}}"/>
+                <text>{{item.text}}</text>
+            </view>
+        </block>
+    </view>
+
+     <view class="title_layout">
+        <view class="line_y"></view>
+        <text>每周之星</text>
+    </view>
+    <image src="{{weekstar_url}}" class = "slide-image"/>
+
+    <view class="content_layout_v">
+        <view class="content_layout_h">
+            <text class="content_name">{{star_name}}</text>
+            <text class="content_level">{{star_level}}</text>
+        </view>
+        <text class="content_desc content_pad_left_5">{{star_desc}}</text>
+    </view>
+    <view class="title_layout">
+        <view class="line_y"></view>
+        <text>私教推荐</text>
+    </view>
+    
+    <scroll-view class="scroll_view_h" scroll-x="true" style="width: 100%">
+        <block wx:for-items="{{coach}}">
+            <view id="green" class="scroll_view_item_v" data-type="{{item.text}}">
+                <image src="{{item.image}}" class="scroll_view_item_image"/>
+                <text class="scroll_view_item_name">{{item.text}}</text>
+                <text class="scroll_view_item_loc">{{item.loc}}</text>
+            </view>
+        </block>
+    </scroll-view>
+
+     <view class="title_layout">
+        <view class="line_y"></view>
+        <text>场馆推荐</text>
+    </view>
+    <image src="{{venues_url}}" class = "slide-image"/>
+    <view class="content_layout_v">
+        <view class="content_layout_h">
+            <text class="venues_name">健康猫运动生活馆7号馆</text>
+            <text class="venues_price">￥299/h</text>
+        </view>
+        <view class="content_layout_h">
+            <text class="venues_desc">瑜伽,健身,太极,有氧操,健身气功</text>
+            <text class="venues_loc">560km</text>
+        </view>
+    </view>
+    
+</view>
+

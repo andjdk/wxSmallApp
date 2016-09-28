@@ -1,0 +1,25 @@
+/**discover.wxss**/
+.discover_item{
+    display: flex;
+    width: 100%;
+    height: 48px;
+    background: #fff;
+    border-top: 1px solid #e4e4e4;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+}
+.discover_item_image{
+    width: 40px;
+    height: 40px;
+}
+
+.scroll-view_v{
+    background-color: #fff;
+    height:100%;
+}
+.discover_item_text{
+    font-size: 15px;
+    color: #656565;
+    padding: 12px;
+}
